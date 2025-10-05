@@ -7,7 +7,7 @@ import { Menu, Search, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { NotificationToggle } from "@/lib/notifications"
+import { NotificationToggle } from "@/lib/notification-toggle"
 
 const navigation = [
   { name: "Home", href: "/" },
