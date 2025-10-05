@@ -5,9 +5,10 @@ import { matches } from "@/lib/data/matches";
 
 export async function GET(
   _request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const team = getTeamById(params.id);
+  const { id } = await params;
+  const team = getTeamById(id);
   if (!team) {
     return NextResponse.json({ error: "Team not found" }, { status: 404 });
   }
