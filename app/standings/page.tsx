@@ -5,9 +5,13 @@ import { Badge } from "@/components/ui/badge"
 import { teams } from "@/lib/data/teams"
 import { Trophy, TrendingUp, TrendingDown } from "lucide-react"
 
-export const metadata = {
-  title: "Standings - AEBL",
-  description: "View current league standings and team rankings",
+export const revalidate = 3600
+
+export async function generateMetadata() {
+  return {
+    title: "Standings - AEBL",
+    description: "View current league standings and team rankings",
+  }
 }
 
 export default function StandingsPage() {

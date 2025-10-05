@@ -2,6 +2,11 @@
 
 Application web moderne pour suivre la ligue de basketball africaine, développée avec Next.js 14, TypeScript et Tailwind CSS.
 
+## 🏆 Ligue
+
+- Nom de la ligue: African Elite Basketball League (AEBL)
+- Démo live: https://site-web-de-ligue-sportive-test-1do.vercel.app/
+
 ## 🏀 Aperçu
 
 Plateforme pour suivre les équipes, les matchs et les statistiques de la ligue de basketball africaine. Le site offre une expérience utilisateur moderne avec un mode sombre/clair.
@@ -33,12 +38,14 @@ Plateforme pour suivre les équipes, les matchs et les statistiques de la ligue 
 ### Installation
 
 1. **Cloner le dépôt**
+
    ```bash
    git clone [URL_DU_REPO]
    cd aebl-basketball-league
    ```
 
 2. **Installer les dépendances**
+
    ```bash
    npm install
    # ou
@@ -46,6 +53,7 @@ Plateforme pour suivre les équipes, les matchs et les statistiques de la ligue 
    ```
 
 3. **Démarrer l'environnement de développement**
+
    ```bash
    npm run dev
    # ou
@@ -84,12 +92,18 @@ Le projet peut être déployé sur Vercel, Netlify ou tout autre hébergeur supp
    - Importez votre dépôt GitHub
    - Ajoutez les variables d'environnement nécessaires
    - Cliquez sur "Déployer"
+   - Démo live de ce projet: https://site-web-de-ligue-sportive-test-1do.vercel.app/
+
+## 📚 Documentation
+
+- Brief technique (1–2 pages): voir `docs/technical-brief.md` pour les défis, choix techniques, optimisations et pistes d'amélioration.
 
 ## 📝 Licence
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus d'informations.
 
 ## 🙏 Remerciements
+
 - [Next.js](https://nextjs.org/) pour le framework
 - [Tailwind CSS](https://tailwindcss.com/) pour les styles
 - [shadcn/ui](https://ui.shadcn.com/) pour les composants

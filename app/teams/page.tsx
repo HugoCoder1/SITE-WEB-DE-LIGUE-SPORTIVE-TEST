@@ -5,9 +5,13 @@ import { Badge } from "@/components/ui/badge"
 import { teams } from "@/lib/data/teams"
 import { Trophy } from "lucide-react"
 
-export const metadata = {
-  title: "Teams - AEBL",
-  description: "Explore all teams competing in the African Elite Basketball League",
+export const revalidate = 3600
+
+export async function generateMetadata() {
+  return {
+    title: "Teams - AEBL",
+    description: "Explore all teams competing in the African Elite Basketball League",
+  }
 }
 
 export default function TeamsPage() {

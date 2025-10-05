@@ -8,6 +8,7 @@ import { getTeamById, teams } from "@/lib/data/teams";
 import { getPlayersByTeam } from "@/lib/data/players";
 import { matches } from "@/lib/data/matches";
 import { ArrowLeft, MapPin } from "lucide-react";
+import { TeamRecentScoresChart } from "@/components/team-recent-scores-chart";
 
 export function generateStaticParams() {
   return teams.map((team) => ({
@@ -104,6 +105,16 @@ export default async function TeamDetailPage({
           </div>
         </div>
       </div>
+
+      {/* Recent Scores Chart */}
+      <section className="mb-12">
+        <h2 className="font-display text-3xl font-bold mb-6">Recent Scores</h2>
+        <Card>
+          <CardContent className="p-6">
+            <TeamRecentScoresChart teamId={team.id} />
+          </CardContent>
+        </Card>
+      </section>
 
       {/* Roster */}
       <section className="mb-12">
